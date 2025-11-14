@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Aula08",
+    "slug": "aula08",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "scheme": "aula08",
+    "platforms": ["ios", "android", "web"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.seuusuario.aula08",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Usaremos a câmera para tirar sua foto de perfil.",
+        "NSPhotoLibraryUsageDescription": "Usaremos sua galeria para escolher a foto de perfil."
+      }
+    },
+    "android": {
+      "package": "com.seuusuario.aula08",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image-picker"
+    ]
+  }
+}
