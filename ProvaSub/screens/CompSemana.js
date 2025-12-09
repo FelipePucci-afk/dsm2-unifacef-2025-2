@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, SectionList, StyleSheet } from 'react-native';
 import compromissosOriginais from '../data/compSemana';
 
-// mantém o arquivo original e adapta para SectionList
 const sections = compromissosOriginais.map((item) => ({
   title: item.titulo,
   data: item.dados,
@@ -57,12 +56,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 20,
     marginBottom: 5,
-    textAlign: 'center',      // dia da semana centralizado
+    textAlign: 'center',      
   },
   item: {
     fontSize: 16,
     marginBottom: 4,
-    marginLeft: 10,           // puxa um pouco pra dentro
-    textAlign: 'left',        // horários e descrições à esquerda
+    marginLeft: 10,           
+    textAlign: 'left',        
   },
 });
